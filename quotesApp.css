@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  background-color: rgba(204, 204, 204, 0.582);
+}
+
+.Quotes_body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: skyblue;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Quotes_body::before {
+  content: "";
+  color: white;
+  position: absolute;
+  top: -55px;
+  right: -45px;
+  width: 100px;
+  height: 100px;
+  rotate: 40deg;
+  background-color: gray;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.562);
+
+}
+.Quotes {
+  width: 90%;
+  height: 50%;
+  overflow: scroll;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 2px 3px 8px grey inset ;
+  color: rgba(245, 245, 245, 0.712);
+  font-weight: 700;
+  position: relative; 
+
+}
+
+.Quotes::-webkit-scrollbar {
+  display: none;
+}
+.Quotes_body > button {
+  border: none;
+  margin-top: 1rem;
+  width: 200px;
+  height: 50px;
+  background: white;
+  border-radius: 3px;
+  box-shadow: -2px -2px 4px rgba(128, 128, 128, 0.801) inset;
+
+}
+.Quotes_body > button:hover {
+  background-color: rgba(128, 128, 128, 0.473);
+  color: white;
+  box-shadow: 2px 2px 4px rgba(128, 128, 128, 0.541) inset;
+
+}
+.Quotes_body > button:active {
+  background-color: seagreen;
+  color: white;
+}
+
+.Quotes > p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: oblique;
+
+}
+
+.Quotes > span{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: oblique
+
+}
+
+@media screen and (min-width: 540px) {
+  .Quotes_body {
+    width: 65%;
+    height: 75%;
+   font-size: 1.4rem;
+
+  }
+}
